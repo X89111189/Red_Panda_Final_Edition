@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservation</title> 
+</head>
+  <div class="navbar-fixed" id="redpanda">
+    <nav class="red darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#redpanda" class="brand-logo"><b>Red Panda</b></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="menu.html"><b>Menu</b></a>
+            </li>
+            <li>
+              <a href="delivery.html"><b>Delivery</b></a>
+            </li>
+            <li class="active">
+              <a href="reservation.html"  class="grey lighten-2 red-text text-darken-4"><b>Reservation</b></a>
+            </li>
+            <li>
+              <a href="dashboard.html"><b>Dashboard</b></a>
+            </li>
+            <li>
+              <a href="careers.html"><b>Careers</b></a>
+            </li>
+            <li>
+              <a href="contact.html"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- SIDE NAV -->
+  <ul class="side-nav" id="mobile-nav">
+    <h4 class="red darken-4 white-text center"><b>Red Panda</b></h4>
+    <li>
+      <a href="index.html"><b>Home</b></a>
+    </li>
+    <li>
+      <a href="menu.html"><b>Menu</b></a>
+    </li>
+    <li>
+      <a href="delivery.html"><b>Delivery</b></a>
+    </li>
+    <li class="active">
+      <a href="reservation.html"  class="grey lighten-2 red-text text-darken-4"><b>Reservation</b></a>
+    </li>
+    <li>
+      <a href="dashboard.html"><b>Dashboard</b></a>
+    </li>
+    <li>
+      <a href="careers.html"><b>Careers</b></a>
+    </li>
+    <li>
+      <a href="contact.html"><b>Contact</b></a>
+    </li>
+  </ul>
+      <div class="showcase container">
+        <div class="row">
+          <div class="col s12 main-text">
+                <!--Slider-->
+                <div class="slider">
+                  <ul class="slides">
+                    <li>
+                      <img src="../img/wedding.jpg">
+                      <!--Center-->
+                      <div class="caption left-align">
+                        <h2 id="wild" class="black-text lighten-2">Wedding </h2>                      
+                        <h5 id="wild" class="black-text lighten-2">Book your wedding and special memories with us and get a discount.
+                          We offer monthly promo for early bookings </h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="../img/birthday2.jpg">
+                      <!--Center-->
+                      <div class="caption left-align">
+                        <h2 id="wild" class="white-text lighten-2">Birthday</h2>
+                        <h5 id="wild" class="white-text lighten-2">Birtday Celebration is worth  celebrating with family and friends. Here at Red Panda we treat you as family. </h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="../img/corporate2.jpg">
+                      <!--Center-->
+                      <div class="caption left-align">
+                        <h2 id="wild" class="white-text lighten-2">Corporate</h2>
+                        <h5 id="wild" class="white-text lighten-2">Corporate events will never be the same and every moment will be more memorable with us.</h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="../img/meeting.jpg">
+                      <!--Center-->
+                      <div class="caption left-align">
+                        <h3 id="wild" class="black-text lighten-2">Meeting</h3>
+                        <h5 id="wild" class="black-text lighten-2">Have your meeting with us and build a productive team. Book now with us</h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="../img/debut.jpg">
+                      <!--Center-->
+                      <div class="caption left-align">
+                        <h3 id="wild" class="black-text lighten-2">Debut</h3>
+                        <h5 id="wild" class="black-text lighten-2">Make a memorable Debut Celebration with us. Book your schedule now.</h5>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="../img/anniversary.jpeg">
+                      <!--Center-->
+                      <div class="caption left-align">
+                        <h3 id="wild" class="white-text lighten-2">Anniversary</h3>
+                        <h5 id="wild" class="white-text lighten-2"> Celebrate your yearly anniversary with us and avail our promos and freebies.</h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+    </div>
+  </header>
+  <!-- Modal -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="col">
+            <div class="col s12 m6 ">
+                 <img src="../img/congee.jpeg" width="250px;">
+              </div>
+
+             <div class="col s12 m6">   
+                <h5>Wild Turkey</h5>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat provident, delectus eligendi excepturi quo nisi quos officiis dicta adipisci repellendus, eum officia amet, veniam animi.</p>
+             </div>
+
+               <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+               </div>
+            </div>
+      </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <div class="col">
+            <div class="col s12 m6 ">
+                 <img src="../img/wanton.jpg" width="250px;">
+              </div>
+
+             <div class="col s12 m6">   
+                <h5>Wild Turkey</h5>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat provident, delectus eligendi excepturi quo nisi quos officiis dicta adipisci repellendus, eum officia amet, veniam animi.</p>
+             </div>
+
+               <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+               </div>
+            </div>
+      </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <div class="col">
+            <div class="col s12 m6 ">
+                 <img src="../img/asadonoodles.jpg" width="250px;">
+              </div>
+
+             <div class="col s12 m6">   
+                <h5>Wild Turkey</h5>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat provident, delectus eligendi excepturi quo nisi quos officiis dicta adipisci repellendus, eum officia amet, veniam animi.</p>
+             </div>
+
+               <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+               </div>
+            </div>
+      </div>
+</div>
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <div class="col">
+            <div class="col s12 m6 ">
+                 <img src="../img/patabihon.jpg" width="250px;">
+              </div>
+             <div class="col s12 m6">   
+                <h5>Wild Turkey</h5>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat provident, delectus eligendi excepturi quo nisi quos officiis dicta adipisci repellendus, eum officia amet, veniam animi.</p>
+             </div>
+
+               <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+               </div>
+            </div>
+      </div>
+</div>
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <div class="col">
+            <div class="col s12 m6 ">
+                 <img src="../img/sauteed.jpg" width="250px;">
+              </div>
+
+             <div class="col s12 m6">   
+                <h5>Wild Turkey</h5>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat provident, delectus eligendi excepturi quo nisi quos officiis dicta adipisci repellendus, eum officia amet, veniam animi.</p>
+             </div>
+
+               <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+               </div>
+            </div>
+      </div>
+</div>
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <div class="col">
+            <div class="col s12 m6 ">
+                 <img src="../img/hofan.jpg" width="250px;">
+              </div>
+             <div class="col s12 m6">   
+                <h5>Wild Turkey</h5>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat provident, 
+                     delectus eligendi excepturi quo nisi quos officiis dicta adipisci repellendus, 
+                     eum officia amet, veniam animi.</p>
+             </div>
+               <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+               </div>
+            </div>
+      </div>
+</div>
+<!-- Practise Site  -->
+<div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="../img/wedding.jpg" >
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Wedding<i class="material-icons right">more_vert</i></span>
+                <p><a href="#modal7" class="waves-effect waves-light modal-trigger">Book Now</a></p>
+                <div id="modal7" class="modal">
+                    <div class="modal-content">
+                      <h4>Book Now</h4>
+                        <div class="input-field">
+                          <input type="text" id="name" placeholder="Name">
+                          <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input type="email" id="email" placeholder="Email">
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                          <input type="text" id="phone" placeholder="Phone Number">
+                          <label for="phone">Phone</label>
+                        </div>
+                        <div class="input-field">
+                          <input type="text"  id="total guest" placeholder="Total Guest">
+                          <label type="total guest">Total Guest</label>
+                        </div>
+                        <div class="input-field">
+                          <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                          <label for="message">Message</label>
+                        </div>
+                        <input type="submit" id="submit" value="Submit" class="btn waves-effect waves-light btn red" name="action">
+                        </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Wedding<i class="material-icons right">close</i></span>
+                <p>Hurry book your wedding with us and a big discount.</p>
+              </div>
+            </div>
+          </div>
+  
+      <div class="col s12 m6">
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="../img/birthday2.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Birthday<i class="material-icons right">more_vert</i></span>
+                <p><a href="#modal7" class="waves-effect waves-light modal-trigger">Book Now</a></p>
+                <div id="modal7" class="modal">
+                    <div class="modal-content">
+                      <h4>Book Now</h4>
+                        <div class="input-field">
+                          <input type="text" id="name" placeholder="Name">
+                          <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                          <input type="email" id="email" placeholder="Email">
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                          <input type="text" id="phone" placeholder="Phone Number">
+                          <label for="phone">Phone</label>
+                        </div>
+                        <div class="input-field">
+                          <input type="text"  id="total guest" placeholder="Total Guest">
+                          <label type="total guest">Total Guest</label>
+                        </div>
+                        <div class="input-field">
+                          <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                          <label for="message">Message</label>
+                        </div>
+                        <input type="submit" id="submit" value="Submit" class="btn waves-effect waves-light btn red" name="action">
+                        </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Birthday <i class="material-icons right">close</i></span>
+                <p>Hurry book your birthday  with us and a big discount..</p>
+              </div>
+            </div>
+          </div>
+  
+      </div>
+    </div>
+  
+    <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+              <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="../img/meeting.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Meeting<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#modal7" class="waves-effect waves-light modal-trigger">Book Now</a></p>
+                    <div id="modal7" class="modal">
+                        <div class="modal-content">
+                          <h4>Book Now</h4>
+                            <div class="input-field">
+                              <input type="text" id="name" placeholder="Name">
+                              <label for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                              <input type="email" id="email" placeholder="Email">
+                              <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                              <input type="text" id="phone" placeholder="Phone Number">
+                              <label for="phone">Phone</label>
+                            </div>
+                            <div class="input-field">
+                              <input type="text"  id="total guest" placeholder="Total Guest">
+                              <label type="total guest">Total Guest</label>
+                            </div>
+                            <div class="input-field">
+                              <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                              <label for="message">Message</label>
+                            </div>
+                            <input type="submit" id="submit" value="Submit" class="btn waves-effect waves-light btn red" name="action">
+                            </div>
+                        <div class="modal-footer">
+                          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+                        </div>
+                      </div>
+
+
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Meeting <i class="material-icons right">close</i></span>
+                    <p>Hurry book your meeting with us and a big discount.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col s12 m6">
+                  <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator responsive-img" src="../img/corporate2.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Corporate<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#modal7" class="waves-effect waves-light modal-trigger">Book Now</a></p>
+                        <div id="modal7" class="modal">
+                            <div class="modal-content">
+                              <h4>Book Now</h4>
+                                <div class="input-field">
+                                  <input type="text" id="name" placeholder="Name">
+                                  <label for="name">Name</label>
+                                </div>
+                                <div class="input-field">
+                                  <input type="email" id="email" placeholder="Email">
+                                  <label for="email">Email</label>
+                                </div>
+                                <div class="input-field">
+                                  <input type="text" id="phone" placeholder="Phone Number">
+                                  <label for="phone">Phone</label>
+                                </div>
+                                <div class="input-field">
+                                  <input type="text"  id="total guest" placeholder="Total Guest">
+                                  <label type="total guest">Total Guest</label>
+                                </div>
+                                <div class="input-field">
+                                  <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+                                  <label for="message">Message</label>
+                                </div>
+                                <input type="submit" id="submit" value="Submit" class="btn waves-effect waves-light btn red" name="action">
+                                </div>
+                            <div class="modal-footer">
+                              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"></a>
+                            </div>
+                          </div>
+
+
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Corporate<i class="material-icons right">close</i></span>
+                        <p>Hurry book your corporate meeting with us and a big discount..</p>
+                      </div>
+                    </div>
+                  </div>
+  
+            </div>
+          </div>
+
+<!-- FOOTER -->
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h5 class="red-text text-lighten-1"><b>Branches</b></h5>
+        <p>Address: 30 Visayas Avenue, Bahay Toro, Quezon City<br>
+        Phone: (02) 376 6491<br><br>
+        Address: 48 East Capitol Drive, Kapitolyo, Pasig City<br>
+        Phone: (02) 475 0877</p>
+      </div>
+      <div class="col s12 m4 offset-m2">
+        <h5 class="red-text text-lighten-1"><b>Links</b></h5>
+        <ul>
+          <li>
+            <a class="white-text" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="white-text" href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a class="white-text" href="delivery.html">Delivery</a>
+          </li>
+          <li>
+            <a class="white-text" href="reservation.html">Reservation</a>
+          </li>
+          <li>
+            <a class="white-text" href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a class="white-text" href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a class="white-text" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-2">
+    <div class="container">
+      🔴🐼 © 2019
+        <a class="grey-text text-lighten-2 right" href="#redpanda">
+          <i class="material-icons left">keyboard_arrow_up</i>Back To Top
+        </a>
+    </div>
+  </div>
+</footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+      // ScrollFire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function () {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('red-grey darken-3');
+          }
+        }
+      ];
+
+        //Courosel
+        $(document).ready(function(){
+    $('.carousel').carousel();
+
+    //Slider
+          $('.slider').slider({
+           // indicator: true,
+            height: 500,
+            transition: 500,
+            interval:6000
+          });
+
+          //Function for Next slide
+    $('.next').click(function(){
+      $('.carousel').carousel('next');
+    });
+
+    //Function for Prev slide
+    $('.prev').click(function(){
+      $('.carousel').carousel('prev');
+    });
+
+
+    //Parallax
+    $(document).ready(function() {
+      $('.parallax').parallax();
+    });
+
+  });
+
+   //Modal
+   $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+      Materialize.scrollFire(options);
+
+      const position = [42.361145, -71.057083];
+      const centerPosition = [42.377815, -70.981133];
+
+      function showGoogleMaps() {
+        // Map positions
+        const latLng = new google.maps.LatLng(position[0], position[1]);
+        const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
+
+        // Map options
+        const mapOptions = {
+          zoom: 12,
+          streetViewControl: false,
+          scaleControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: centerLatLng
+        }
+
+        // Create map
+        map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
+
+        // Show Marker
+        marker = new google.maps.Marker({
+          position: latLng,
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP
+        });
+      }
+
+      // Maps event
+      google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+      $('#submit').click(function (e) {
+        $('#modal7').hide();
+        console.log('this is modal7')
+            e.preventDefault();
+});
+
+
+$('#menu-form').submit(function (e) {
+
+e.preventDefault();
+});
+
+
+    });
+  </script>
+</body>
+
+</html>
