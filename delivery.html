@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/delivery.css" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery</title>
+
+</head>
+
+<body>
+  <div class="navbar-fixed" id="redpanda">
+    <nav class="red darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#redpanda" class="brand-logo"><b>Red Panda</b></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="menu.html"><b>Menu</b></a>
+            </li>
+            <li class="active">
+              <a href="delivery.html" class="grey lighten-2 red-text text-darken-4"><b>Delivery</b></a>
+            </li>
+            <li>
+              <a href="reservation.html"><b>Reservation</b></a>
+            </li>
+            <li>
+              <a href="dashboard.html"><b>Dashboard</b></a>
+            </li>
+            <li>
+              <a href="careers.html"><b>Careers</b></a>
+            </li>
+            <li>
+              <a href="contact.html"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- SIDE NAV -->
+  <ul class="side-nav" id="mobile-nav">
+    <h4 class="red darken-4 white-text center"><b>Red Panda</b></h4>
+    <li>
+      <a href="index.html"><b>Home</b></a>
+    </li>
+    <li>
+      <a href="menu.html"><b>Menu</b></a>
+    </li>
+    <li class="active">
+      <a href="delivery.html" class="grey lighten-2 red-text text-darken-4"><b>Delivery</b></a>
+    </li>
+    <li>
+      <a href="reservation.html"><b>Reservation</b></a>
+    </li>
+    <li>
+      <a href="dashboard.html"><b>Dashboard</b></a>
+    </li>
+    <li>
+      <a href="careers.html"><b>Careers</b></a>
+    </li>
+    <li>
+      <a href="contact.html"><b>Contact</b></a>
+    </li>
+  </ul>
+  <section>
+        <div class="row container">
+          <div class="col s12 m6 l7">
+              <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header s12 red darken-4">
+                      <i class="material-icons white-text">local_dining</i><b class="white-text">Appetizer</b>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/1-BBrisket.jpg" alt="" class="circle responsive-img z-depth-4"  width="650px"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Beef Brisket</h5>
+                                      <p>This Oven-Barbecued Beef Brisket is so smokey, tender, and juicy</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 245.00</h6>
+                                      
+                                      <div class="row">
+                                          <div class="col s1" style="width: 50px; text-align: center;">
+                                            <span>
+                                              <p>QTY:</p>
+                                            </span>
+                                          </div>                    
+                                        <div class="col s3" style="width: 100px;">
+                                            <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                        </div>
+                                        <div  class="col s3">
+                                            <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                              </button> 
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/2-MBall.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Meat Balls</h5>
+                                      <p>Combine beef, veal, and pork in a large plate. Add garlic, eggs, cheese, parsley, salt and pepper.</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 180.00</h6>
+                                      
+                                      <div class="row">
+                                          <div class="col s1" style="width: 50px; text-align: center;">
+                                            <span>
+                                              <p>QTY:</p>
+                                            </span>
+                                          </div>                    
+                                        <div class="col s3" style="width: 100px;">
+                                            <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                        </div>
+                                        <div  class="col s3">
+                                            <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                              </button> 
+                                        </div>
+                                    </div>
+                                      
+                                  </div>
+                                </div>                                         
+                              </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/3-WWanton.jpg" alt="" class="circle responsive-img z-depth-4"  width="650px"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Wanton</h5>
+                                      <p>In a large plate, mix pork, soy sauce, chives, vinegar, cornstarch, ginger, garlic, red pepper flakes and sesame oil until fully incorporated.</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 180.00</h6>
+                                      
+                                      <div class="row">
+                                          <div class="col s1" style="width: 50px; text-align: center;">
+                                            <span>
+                                              <p>QTY:</p>
+                                            </span>
+                                          </div>                    
+                                        <div class="col s3" style="width: 100px;">
+                                            <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                        </div>
+                                        <div  class="col s3">
+                                            <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                              </button> 
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                      </ul>
+        
+                    </div>
+                  </li>
+                  <li>
+                    <!-- pre select -->
+                    <div class="collapsible-header s12 red darken-4">
+                        <i class="material-icons white-text">room_service</i><b class="white-text">Chinese Classic</b>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/chinese-classic/1-patatim-with-cuapao.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Patatim w/ Cuapao</h5>
+                                      <p>Like the more common pata hamonado, Pata Tim is a whole pork leg cooked low and slow in a sweet and savory sauce.</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 720.00</h6>
+                                      
+                                      <div class="row">
+                                            <div class="col s1" style="width: 50px; text-align: center;">
+                                              <span>
+                                                <p>QTY:</p>
+                                              </span>
+                                            </div>                    
+                                          <div class="col s3" style="width: 100px;">
+                                              <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                          </div>
+                                          <div  class="col s3">
+                                              <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                  <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                                </button> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/chinese-classic/6-l-shanghai.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Lumpia Shanghai</h5>
+                                      <p>Lumpia Shanghai is a type of egg roll, except it's mainly filled with meat. You could use pork or beef or both!</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 285.00</h6>
+                                      
+                                      <div class="row">
+                                            <div class="col s1" style="width: 50px; text-align: center;">
+                                              <span>
+                                                <p>QTY:</p>
+                                              </span>
+                                            </div>                    
+                                          <div class="col s3" style="width: 100px;">
+                                              <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                          </div>
+                                          <div  class="col s3">
+                                              <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                  <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                                </button> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/chinese-classic/31-fb-chicken.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Fried Buttered Chicken</h5>
+                                      <p>Butter Fried Chicken are so deliciously good. Mouthwatering!</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 310.00</h6>
+                                      
+                                      <div class="row">
+                                            <div class="col s1" style="width: 50px; text-align: center;">
+                                              <span>
+                                                <p>QTY:</p>
+                                              </span>
+                                            </div>                    
+                                          <div class="col s3" style="width: 100px;">
+                                              <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                          </div>
+                                          <div  class="col s3">
+                                              <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                  <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                                </button> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header s12 red darken-4">
+                        <i class="material-icons white-text">hot_tub</i><b class="white-text">Congee</b>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul class="collection">
+                        <li class="collection-item">
+                          <div class="row">
+                            <div class="col s3">
+                                <img src="https://www.hapchan.com.ph/img/menu-gallery/congee/1-Bola%20Bola%20Congee.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                            </div>
+                            <div class="col s6">
+                                <h5>Bola Bola Congee</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p><br>
+                                <h6 class="price green-text"style="font-size: 20px;">₱ 140.00</h6>
+                                
+                                <div class="row">
+                                      <div class="col s1" style="width: 50px; text-align: center;">
+                                        <span>
+                                          <p>QTY:</p>
+                                        </span>
+                                      </div>                    
+                                    <div class="col s3" style="width: 100px;">
+                                        <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                    </div>
+                                    <div  class="col s3">
+                                        <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                            <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                          </button> 
+                                    </div>
+                                </div>
+                            </div>
+                          </div>                                         
+                        </li>
+                        <li class="collection-item">
+                          <div class="row">
+                            <div class="col s3">
+                                <img src="https://www.hapchan.com.ph/img/menu-gallery/congee/5-PwC%20Egg%20Congee.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                            </div>
+                            <div class="col s6">
+                                <h5>Pork w/ Century Egg Congee</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                                <h6 class="price green-text"style="font-size: 20px;">₱ 140.00</h6>
+                                
+                                <div class="row">
+                                      <div class="col s1" style="width: 50px; text-align: center;">
+                                        <span>
+                                          <p>QTY:</p>
+                                        </span>
+                                      </div>                    
+                                    <div class="col s3" style="width: 100px;">
+                                        <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                    </div>
+                                    <div  class="col s3">
+                                        <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                            <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                          </button> 
+                                    </div>
+                                </div>
+                            </div>
+                          </div>                                         
+                        </li>
+                        <li class="collection-item">
+                          <div class="row">
+                            <div class="col s3">
+                                <img src="https://www.hapchan.com.ph/img/menu-gallery/congee/6-SB%20Congee.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                            </div>
+                            <div class="col s6">
+                                <h5>Sliced Beef Congee</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur!</p><br>
+                                <h6 class="price green-text"style="font-size: 20px;">₱ 145.00</h6>
+                                
+                                <div class="row">
+                                      <div class="col s1" style="width: 50px; text-align: center;">
+                                        <span>
+                                          <p>QTY:</p>
+                                        </span>
+                                      </div>                    
+                                    <div class="col s3" style="width: 100px;">
+                                        <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                    </div>
+                                    <div  class="col s3">
+                                        <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                            <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                          </button> 
+                                    </div>
+                                </div>
+                            </div>
+                          </div>                                         
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header s12 red darken-4">
+                        <i class="material-icons white-text">local_bar</i><b class="white-text">Desserts & Drinks</b>
+                    </div>
+                    <div class="collapsible-body">
+                     <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/dessert&drinks/3-BW%20Gulaman.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Black & White Gulaman</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, perspiciatis.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;">₱ 75.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/dessert&drinks/7-Chilled%20Taho%20w%20Mango.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Chilled Taho w/ Mango</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;">₱ 70.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/dessert&drinks/13-Mango%20Shake.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Mango Shake</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;">₱ 75.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                     </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header s12 red darken-4">
+                        <i class="material-icons white-text">cloud</i><b class="white-text">Dimsum</b>
+                    </div>
+                    <div class="collapsible-body">
+                     <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/dimsum/1-asado-siopao.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Asado Siopao</h5>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;">₱ 95.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/dimsum/7-j-siomai.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Japanese Dumpling</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;">₱ 105.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/dimsum/11-qe-siomai.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Quail Egg Siomai</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat!</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;">₱ 95.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                     </ul>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="collapsible-header s12 red darken-4">
+                        <i class="material-icons white-text">gesture</i><b class="white-text">Noodles</b>
+                    </div>
+                    <div class="collapsible-body">
+                     <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/noodles/1-A%20Noodle.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Asado Noodle</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;"> ₱ 185.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/noodles/2-Beef%20Brisket%20Noodle.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Beef Brisket Noodle</h5>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;"> ₱ 230.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                      <li class="collection-item">
+                        <div class="row">
+                          <div class="col s3">
+                              <img src="https://www.hapchan.com.ph/img/menu-gallery/noodles/3-Meat%20Ball%20Noodle.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                          </div>
+                          <div class="col s6">
+                              <h5>Meat Ball Noodle</h5>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p><br>
+                              <h6 class="price green-text"style="font-size: 20px;"> ₱ 205.00</h6>
+                              
+                              <div class="row">
+                                    <div class="col s1" style="width: 50px; text-align: center;">
+                                      <span>
+                                        <p>QTY:</p>
+                                      </span>
+                                    </div>                    
+                                  <div class="col s3" style="width: 100px;">
+                                      <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                  </div>
+                                  <div  class="col s3">
+                                      <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                          <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                        </button> 
+                                  </div>
+                              </div>
+                          </div>
+                        </div>                                         
+                      </li>
+                     </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header s12 red darken-4">
+                        <i class="material-icons white-text">waves</i><b class="white-text">Rice & Pancit</b>
+                    </div>
+                    <div class="collapsible-body">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/rice&noodles/3-Dc%20w%20Salted%20Fish%20Fried%20Rice.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Diced Chicken w/ Salted Fish Fried Rice</h5>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 235.00</h6>
+                                      
+                                      <div class="row">
+                                            <div class="col s1" style="width: 50px; text-align: center;">
+                                              <span>
+                                                <p>QTY:</p>
+                                              </span>
+                                            </div>                    
+                                          <div class="col s3" style="width: 100px;">
+                                              <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                          </div>
+                                          <div  class="col s3">
+                                              <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                  <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                                </button> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/rice&noodles/3-Dc%20w%20Salted%20Fish%20Fried%20Rice.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Yang Chow Fried Rice</h5>
+                                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia?</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 305.00</h6>
+                                      
+                                      <div class="row">
+                                            <div class="col s1" style="width: 50px; text-align: center;">
+                                              <span>
+                                                <p>QTY:</p>
+                                              </span>
+                                            </div>                    
+                                          <div class="col s3" style="width: 100px;">
+                                              <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                          </div>
+                                          <div  class="col s3">
+                                              <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                  <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                                </button> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                            <li class="collection-item">
+                                <div class="row">
+                                  <div class="col s3">
+                                      <img src="https://www.hapchan.com.ph/img/menu-gallery/rice&noodles/10-Sf%20Canton.jpg" alt="" class="circle responsive-img z-depth-4"> 
+                                  </div>
+                                  <div class="col s6">
+                                      <h5>Seafood Canton</h5>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, veritatis?</p><br>
+                                      <h6 class="price green-text"style="font-size: 20px;">₱ 325.00</h6>
+                                      
+                                      <div class="row">
+                                            <div class="col s1" style="width: 50px; text-align: center;">
+                                              <span>
+                                                <p>QTY:</p>
+                                              </span>
+                                            </div>                    
+                                          <div class="col s3" style="width: 100px;">
+                                              <input id="qty1" class="spinbox" type="number" min="1" max="99" step="2" value="1" size="10" >
+                                          </div>
+                                          <div  class="col s3">
+                                              <button  btn="submit" class="btn red darken-4" style="width: 80px;"> 
+                                                  <i class="material-icons white-text" style="font-size: 20px;">add</i>
+                                                </button> 
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>                                         
+                              </li>
+                             </ul>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>
+                </ul>
+                <div class="col s12 m6 l5">
+                    <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">My Orders</span>
+                        <form id="todo-form">
+                       
+                        </form>
+                        <ul class="collection todos">
+                        <li class="collection-item">
+                            <div>1 Beef Brisket | P 245.00
+                            <a href="#!" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a>
+                            </div>
+                     
+                        </li>
+                        <li class="collection-item">
+                            <div>2 Black & White Gulaman | P 75.00                 
+                              <a href="#!" class="secondary-content delete">
+                                <i class="material-icons">close</i>
+                            </a>
+                            </div>
+                        </li>
+                        </ul>
+                      <button id="order" class="btn red red darken-4"  style = "position:relative; left:70px; top:2px">Submit Orders</button>
+                    </div>
+                
+                    </div>
+                  </ul>
+                </div>
+              </div>
+           
+      
+              </div><!--end of row-->
+        </div> <!--end of container-->
+        
+      </section>
+
+<!-- FOOTER -->
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h5 class="red-text text-lighten-1"><b>Branches</b></h5>
+        <p>Address: 30 Visayas Avenue, Bahay Toro, Quezon City<br>
+        Phone: (02) 376 6491<br><br>
+        Address: 48 East Capitol Drive, Kapitolyo, Pasig City<br>
+        Phone: (02) 475 0877</p>
+      </div>
+      <div class="col s12 m4 offset-m2">
+        <h5 class="red-text text-lighten-1"><b>Links</b></h5>
+        <ul>
+          <li>
+            <a class="white-text" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="white-text" href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a class="white-text" href="delivery.html">Delivery</a>
+          </li>
+          <li>
+            <a class="white-text" href="reservation.html">Reservation</a>
+          </li>
+          <li>
+            <a class="white-text" href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a class="white-text" href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a class="white-text" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-2">
+    <div class="container">
+      🔴🐼 © 2019
+        <a class="grey-text text-lighten-2 right" href="#redpanda">
+          <i class="material-icons left">keyboard_arrow_up</i>Back To Top
+        </a>
+    </div>
+  </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+      // jQuery for SWIPABLE TABS
+      $('#tabs-swipe-demo').tabs({
+        swipeable: true
+      });
+      // jQuery for MULTIPLE SELECT
+      $('select').material_select();
+      // jQuery for SLIDER
+      $('.slider').slider({
+        indicators: true,
+        height: 105, //for image
+        transition: 1000, //of texts
+        interval: 5000 //between images
+      });
+      // jQuery for SCROLLSPY
+      $('.scrollspy').scrollSpy();
+      // jQuery for SIDE NAV
+      $('.button-collapse').sideNav();
+    });
+  </script>
+
+</body>
+
+</html>
