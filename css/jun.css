@@ -1,0 +1,71 @@
+
+  .determinate{
+    height: 950%;
+  }
+  .collection-header{
+    border:1px solid rgb(167, 0, 0);
+  }
+/* .card-panel{
+    border:1px solid rgb(167, 0, 0);
+  } */
+
+  /* .collection .collection-item{
+    border:1px solid rgb(167, 0, 0);
+  } */
+  
+  /* for img size and style */
+  #circle {
+    height: 80%;
+    width: 25%;
+  }
+  /* closing */
+  
+  /* for title position */
+  .title{
+    margin-left: 60px; 
+  }
+  /* closing */
+  
+  .secondary-content {
+    height: 30px;
+  }
+  .size{
+   height: 30px;
+  
+  }
+  /* .collapsible-header{
+    border:1px solid rgb(167, 0, 0);
+  } */
+  
+  /*for icon function thumb_up to par*/
+  #margin{
+    margin-left: -380px;
+    margin-top: 38.5px;
+   
+  }
+  /* closing */
+  
+  /* font style for <p> paragrap and font-size  by:0d6rb3 */
+  p {
+    font-family: 'Segoe UI';
+    
+  }
+  
+  h5 {
+    font-family: 'Segoe UI';
+    font-size: 15;
+  }
+  /* closing */
+  
+  /*font-size for Recent Rating by: 0d6rb3 */
+  .font-size{
+    font-size: 20px;
+  }
+  /* closing */
+
+  /* for recent rating style */
+  #img-recent{
+    height: 90px;
+    width: 90px;
+
+  }

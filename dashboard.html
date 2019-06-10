@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red_Panda-Dashboard</title>
+
+</head>
+
+<body>
+
+  <div class="navbar-fixed" id="redpanda">
+    <nav class="red darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#redpanda" class="brand-logo"><b>Red Panda</b></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li>
+              <a href="menu.html"><b>Menu</b></a>
+            </li>
+            <li>
+              <a href="delivery.html"><b>Delivery</b></a>
+            </li>
+            <li>
+              <a href="reservation.html"><b>Reservation</b></a>
+            </li>
+            <li class="active">
+              <a href="dashboard.html" class="grey lighten-2 red-text text-darken-4"><b>Dashboard</b></a>
+            </li>
+            <li>
+              <a href="careers.html"><b>Careers</b></a>
+            </li>
+            <li>
+              <a href="contact.html"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- SIDE NAV -->
+  <ul class="side-nav" id="mobile-nav">
+    <h4 class="red darken-4 white-text center"><b>Red Panda</b></h4>
+    <li>
+      <a href="index.html"><b>Home</b></a>
+    </li>
+    <li>
+      <a href="menu.html"><b>Menu</b></a>
+    </li>
+    <li>
+      <a href="delivery.html"><b>Delivery</b></a>
+    </li>
+    <li>
+      <a href="reservation.html"><b>Reservation</b></a>
+    </li>
+    <li class="active">
+      <a href="dashboard.html" class="grey lighten-2 red-text text-darken-4"><b>Dashboard</b></a>
+    </li>
+    <li>
+      <a href="careers.html"><b>Careers</b></a>
+    </li>
+    <li>
+      <a href="contact.html"><b>Contact</b></a>
+    </li>
+  </ul>
+
+   <!-- SECTION FOR LIST OF SALES YEAR -->
+<section class="section section-visitors white">
+  <div class="row">
+      <div class="col s12 m6 l8">
+        <ul class="collection">
+          <li class="collection-header red darken-4 white-text"><h5><center>RATING OF 2019</center></h5></li>
+          <div class="card-panel">
+              
+            <div id="chartContainer" style="height: 550.5px; width: 100%;"></div>
+          </div>
+        </u>
+      </div>
+    
+        <div class="col s12 m6 l4">
+            <ul class="collection">
+              <li class="collection-header red darken-4 white-text"><h5><center> RECENT RATING</center></h5></li>
+              <div style="height: 30.5px;"></div>
+                <li class="collection-item avatar">
+                  <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/1-BBrisket.jpg" alt="" class="circle" id="img-recent"><br><br><br><br>
+                  <p class="font-size">Beep Steak </p>
+                          <h6 style="color: green">P399
+                        </h6>
+                  <a href="#!" class="secondary-content" ><br><br><br><br><br>
+                    <i class="material-icons">star star star star star</i>
+                    </a>
+                    <div class="progress" >  
+                      <div class="determinate" style="width: 70%"></div>
+                    </div><br>
+                  
+                    <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/2-MBall.jpg" alt="" class="circle" id="img-recent"><br><br><br><br>
+                    <p class="font-size">Wild Turkey </p>
+                          <h6 style="color: green">P269
+                        </h6>
+                    <a href="#!" class="secondary-content" ><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                      <i class="material-icons">star star star star_halfx  </i>
+                      </a>
+                      <div class="progress" >  
+                        <div class="determinate" style="width: 60%"></div>
+                      </div><br>
+
+                    <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/3-WWanton.jpg" alt="" class="circle" id="img-recent"><br><br><br><br>
+                    <p class="font-size">Cheken </p>
+                      <h6 style="color: green">P359
+                    </h6>
+                    <a href="#!" class="secondary-content" ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                      <i class="material-icons">star star star_halfx  </i>
+                      </a>
+                      <div class="progress" >  
+                        <div class="determinate" style="width: 50%"></div>
+                      </div><br>
+
+                      <ul class="pagination">
+                          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                          <li class="active green"><a href="#!">1</a></li>
+                          <li class="waves-effect"><a href="#!">2</a></li>
+                          <li class="waves-effect"><a href="#!">3</a></li>
+                          <li class="waves-effect"><a href="#!">4</a></li>
+                          <li class="waves-effect"><a href="#!">5</a></li>
+                          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                </li> <!-- CLOSING  -->
+              </ul><!-- CLOSING -->
+            
+      </div>
+  </div><!-- CLOSING OF ROW -->
+</section>
+
+
+<!-- SECTION FOR LIST OF PRIVOUS SALE FOODS -->
+<section class="section section-visitors white">
+<div class="row">
+  <div class="col s12 m6 l8">
+    <ul class="collapsible">
+      <li>
+          <div class="collapsible-header red darken-4">
+              <i class="material-icons white-text">edit</i>
+              <center class="white-text">REVIEWS OF FOODS</center>
+          </div> <!-- CLOSING OF PRINT BUTTON TO PRE -->
+
+          <div class="collapsible-body"> 
+
+<!-- SECTION FOR TABLE OF PRIVIOUS FOODS YAN PAR -->
+            <section class="section section-recent">
+              <div class="row">
+                <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                  <div class="card">
+                    <div class="card-content" >
+                      <img src="https://www.hapchan.com.ph/img/menu-gallery/appetizer/1-BBrisket.jpg" alt="" class="circle" id="circle">
+                        <h5><b></b>BEEP STEAK </h5>
+                          <h5 style="color: green">P299</br>
+                        </h5>
+                     
+                        <h6>January</h6>
+                          <a href="#!" class="secondary-content" class="size">
+                              <i class="material-icons">star star star star star_halfx  </i>
+                          </a>
+                          <!-- FOR RATING BARS -->
+                                <div class="progress" class="size">  
+                                  <div class="determinate" style="width: 65%"></div>
+                                </div>
+                                <!-- CLOSING OF RATING BAR -->
+
+                                <h6>February</h6>
+                                  <a href="#!" class="secondary-content" class="size">
+                                      <i class="material-icons">star star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 55%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                <h6>March</h6>
+                                  <a href="#!" class="secondary-content">
+                                      <i class="material-icons">star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 40%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>Appril</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 79%"></div>
+                                    </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>May</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 29%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+
+                                    <h6>June</h6>
+                                      <a href="#!" class="secondary-content">
+                                          <i class="material-icons">star star_halfx  </i>
+                                      </a>
+                                      <!-- FOR RATING BARS -->
+                                      <div class="progress">
+                                          <div class="determinate" style="width: 20%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+
+                                      <!--FOR PRINT REPORT YAN PRE   -->
+                                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">print</i>PRINT REPORT</a>
+                                      <!-- CLOSING BUTTON PRINT -->
+
+                            </div><!-- closing of content -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- CLOSING OF SECTION FOR BEEP STEAK -->
+
+<!-- SECTION FOR TABLE OF PRIVIOUS FOODS YAN PAR -->
+            <section class="section section-recent">
+              <div class="row">
+                  <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                  <div class="card">
+                    <div class="card-content" >
+                      <img src="https://www.hapchan.com.ph/img/menu-gallery/chinese-classic/1-patatim-with-cuapao.jpg" alt="" class="circle" id="circle">
+                      <h5><b></b>SAUTEED </h5>
+                          <h5 style="color: green">P399</br>
+                        </h5>
+                    
+                        <h6>January</h6>
+                          <a href="#!" class="secondary-content" class="size">
+                              <i class="material-icons">star star star star star_halfx  </i>
+                          </a>
+                          <!-- FOR RATING BARS -->
+                                <div class="progress" class="size">  
+                                  <div class="determinate" style="width: 65%"></div>
+                                </div>
+                                <!-- CLOSING OF RATING BAR -->
+
+                                <h6>February</h6>
+                                  <a href="#!" class="secondary-content" class="size">
+                                      <i class="material-icons">star star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 55%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                <h6>March</h6>
+                                  <a href="#!" class="secondary-content">
+                                      <i class="material-icons">star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 40%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>Appril</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 79%"></div>
+                                    </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>May</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 29%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+
+                                    <h6>June</h6>
+                                      <a href="#!" class="secondary-content">
+                                          <i class="material-icons">star star_halfx  </i>
+                                      </a>
+                                      <!-- FOR RATING BARS -->
+                                      <div class="progress">
+                                          <div class="determinate" style="width: 20%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+
+                                      <!--FOR PRINT REPORT YAN PRE   -->
+                                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">print</i>PRINT REPORT</a>
+                                      <!-- CLOSING BUTTON PRINT -->
+
+
+                            </div><!-- closing of content -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- CLOSING OF SECTION FOR BEEP STEAK -->
+
+<!-- SECTION FOR TABLE OF PRIVIOUS FOODS YAN PAR -->
+            <section class="section section-recent">
+              <div class="row">
+                  <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                  <div class="card">
+                    <div class="card-content" >
+                      <img src="https://www.hapchan.com.ph/img/menu-gallery/chinese-classic/6-l-shanghai.jpg" alt="" class="circle" id="circle">
+                        <h5><b></b>WILD TURKEY</h5>
+                          <h5 style="color: green">P499</b>
+                        </h5>
+                    
+                        <h6>January</h6>
+                          <a href="#!" class="secondary-content" class="size">
+                              <i class="material-icons">star star star star star_halfx  </i>
+                          </a>
+                          <!-- FOR RATING BARS -->
+                                <div class="progress" class="size">  
+                                  <div class="determinate" style="width: 65%"></div>
+                                </div>
+                                <!-- CLOSING OF RATING BAR -->
+
+                                <h6>February</h6>
+                                  <a href="#!" class="secondary-content" class="size">
+                                      <i class="material-icons">star star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 55%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                <h6>March</h6>
+                                  <a href="#!" class="secondary-content">
+                                      <i class="material-icons">star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 40%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>Appril</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 79%"></div>
+                                    </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>May</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 29%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+
+                                    <h6>June</h6>
+                                      <a href="#!" class="secondary-content">
+                                          <i class="material-icons">star star_halfx  </i>
+                                      </a>
+                                      <!-- FOR RATING BARS -->
+                                      <div class="progress">
+                                          <div class="determinate" style="width: 20%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+
+                                      <!--FOR PRINT REPORT YAN PRE   -->
+                                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">print</i>PRINT REPORT</a>
+                                      <!-- CLOSING BUTTON PRINT -->
+
+
+                            </div><!-- closing of content -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- CLOSING OF SECTION FOR BEEP STEAK -->
+
+<!-- SECTION FOR TABLE OF PRIVIOUS FOODS YAN PAR -->
+            <section class="section section-recent">
+              <div class="row">
+                  <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                  <div class="card">
+                    <div class="card-content" >
+                      <img src="https://www.hapchan.com.ph/img/menu-gallery/chinese-classic/31-fb-chicken.jpg" alt="" class="circle" id="circle">
+                      <h5><b></b>NOODLES </h5>
+                          <h5 style="color: green">P259</b>
+                        </h5>
+                    
+                        <h6>January</h6>
+                          <a href="#!" class="secondary-content" class="size">
+                              <i class="material-icons">star star star star star_halfx  </i>
+                          </a>
+                          <!-- FOR RATING BARS -->
+                                <div class="progress" class="size">  
+                                  <div class="determinate" style="width: 65%"></div>
+                                </div>
+                                <!-- CLOSING OF RATING BAR -->
+
+                                <h6>February</h6>
+                                  <a href="#!" class="secondary-content" class="size">
+                                      <i class="material-icons">star star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 55%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                <h6>March</h6>
+                                  <a href="#!" class="secondary-content">
+                                      <i class="material-icons">star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 40%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>Appril</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 69%"></div>
+                                    </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>May</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 29%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+
+                                    <h6>June</h6>
+                                      <a href="#!" class="secondary-content">
+                                          <i class="material-icons">star star_halfx  </i>
+                                      </a>
+                                      <!-- FOR RATING BARS -->
+                                      <div class="progress">
+                                          <div class="determinate" style="width: 20%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+
+                                      <!--FOR PRINT REPORT YAN PRE   -->
+                                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">print</i>PRINT REPORT</a>
+                                      <!-- CLOSING BUTTON PRINT -->
+
+
+                            </div><!-- closing of content -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- CLOSING OF SECTION FOR BEEP STEAK -->
+
+<!-- SECTION FOR TABLE OF PRIVIOUS FOODS YAN PAR -->
+            <section class="section section-recent">
+              <div class="row">
+                  <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                  <div class="card">
+                    <div class="card-content" >
+                      <img src="https://www.hapchan.com.ph/img/menu-gallery/congee/1-Bola%20Bola%20Congee.jpg" alt="" class="circle" id="circle">
+                      <h5><b></b>HAFON </h5>
+                          <h5 style="color: green">P599</b>
+                        </h5>
+                    
+                        <h6>January</h6>
+                          <a href="#!" class="secondary-content" class="size">
+                              <i class="material-icons">star star star star star_halfx  </i>
+                          </a>
+                          <!-- FOR RATING BARS -->
+                                <div class="progress" class="size">  
+                                  <div class="determinate" style="width: 65%"></div>
+                                </div>
+                                <!-- CLOSING OF RATING BAR -->
+
+                                <h6>February</h6>
+                                  <a href="#!" class="secondary-content" class="size">
+                                      <i class="material-icons">star star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 55%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                <h6>March</h6>
+                                  <a href="#!" class="secondary-content">
+                                      <i class="material-icons">star star star_halfx  </i>
+                                  </a>
+                                  <!-- FOR RATING BARS -->
+                                  <div class="progress">
+                                      <div class="determinate" style="width: 40%"></div>
+                                  </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>Appril</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 69%"></div>
+                                    </div>
+                                  <!-- CLOSING OF RATING BAR -->
+
+                                  <h6>May</h6>
+                                    <a href="#!" class="secondary-content">
+                                        <i class="material-icons">star star star_halfx  </i>
+                                    </a>
+                                    <!-- FOR RATING BARS -->
+                                    <div class="progress">
+                                        <div class="determinate" style="width: 29%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+
+                                    <h6>June</h6>
+                                      <a href="#!" class="secondary-content">
+                                          <i class="material-icons">star star_halfx  </i>
+                                      </a>
+                                      <!-- FOR RATING BARS -->
+                                      <div class="progress">
+                                          <div class="determinate" style="width: 20%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+
+                                      <!--FOR PRINT REPORT YAN PRE   -->
+                                      <a class="waves-effect waves-light btn-large"><i class="material-icons left">print</i>PRINT REPORT</a>
+                                      <!-- CLOSING BUTTON PRINT -->
+
+
+                            </div><!-- closing of content -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!-- CLOSING OF SECTION FOR BEEP STEAK -->
+     
+<!-- Section for Web Developers -->
+                     
+            <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">person</i>
+                  WEB DEVELOPERS
+                  <span class="new badge">5</span></div>
+                <div class="collapsible-body">
+                    <section class="section section-recent">
+                        <div class="row">
+                            <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                            <div class="card">
+                              <div class="card-content" >
+                                <!-- Junjun -->
+                                <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-0/p206x206/35238266_1092729734212000_4975458731807473664_n.jpg?_nc_cat=104&_nc_eui2=AeFv-s7dYxiHoTMO4BgqntyDYvEXATWXsgpUqBzpSgYQefyXVV2Qm1DV6yXsZY3EiSsBj8UVdmAKYNJuXNPZJW2vAwOnZsn1ItbDmZVmeFEmFMmF0a2yw4E8bfhw6ak54FQ&_nc_oc=AQnH91RywC_-myAs99Jkj5powUsAwZstG6DTWRGuBovtrynhqeruq1JUxhevXkX0kF4&_nc_ht=scontent.fmnl3-1.fna&oh=38d1d40ce6ffcaf8a389b5e0236bedbf&oe=5D90BED4" alt="" class="circle" id="circle">
+                                  <h6>Ernesto M Odarbe Jr <br>(Junjun)</h6>
+                                  <!-- FOR RATING BARS -->
+                                  <p>Skill: 99%</p>
+                                  <div class="progress" class="size">  
+                                      <div class="determinate" style="width: 99%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+                                  <p>Web Developer & Web Designer <br>
+                                    Age: 24 
+                                  </p>
+                                      </div><!-- closing of content -->
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                      <!-- for Jonel -->
+                    <section class="section section-recent">
+                        <div class="row">
+                            <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                            <div class="card">
+                              <div class="card-content" >
+                                <!-- Junjun -->
+                                <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/50514923_2247968555241866_1213509414250610688_n.jpg?_nc_cat=105&_nc_eui2=AeGAzQ--ZjH4b0dMIU0jQ38_mPvJb0keZTfZzoy_Ej0oTnhhH4rGszgW3SZ6po_76hGtPW3zZLslEIoaiGrb6K33PwsavVyiYk8kAf0byNaH7-Hx-ew83QPLN3-KqqA10UA&_nc_oc=AQmbXBslJHnSwbLeKW-8HqNcJ8MYnJoGgvS2HdJXjm0YQwgPXY0gPCV2xSgjRGvrt8k&_nc_ht=scontent.fmnl3-2.fna&oh=85c78d77c233f6bd5ce7a8767b107be6&oe=5D514F39" alt="" class="circle" id="circle">
+                                  <h6>Jonel A Velez<br>(Jonel)</h6>
+                                  <!-- FOR RATING BARS -->
+                                  <p>Skill: 99%</p>
+                                  <div class="progress" class="size">  
+                                      <div class="determinate" style="width: 99%"></div>
+                                    </div>
+                                    <!-- CLOSING OF RATING BAR -->
+                                  <p>Web Developer & Web Designer <br>
+                                    Age: 23 
+                                 </p>
+                                      </div><!-- closing of content -->
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                      <!-- for Erick -->
+                    <section class="section section-recent">
+                        <div class="row">
+                            <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                            <div class="card">
+                              <div class="card-content" >
+                                <!-- Junjun -->
+                                <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/10411915_940623362646975_5534868575233939592_n.jpg?_nc_cat=109&_nc_eui2=AeE5erCf0uEw6fY6G7myqBNZUvGSr3hY9lrh0ETwho0nw8J2wqIHkOIwoAp_YqVFNqIVIME37e036fcSLgOGWipcR9q7tFUgdxg7sa0EszCB5WhoYnRYf-nBmvq7ZFHCPb8&_nc_oc=AQkXezwfz3knbASWnMl7dpBpY7gvvc4CDefxGY2Bqt4W7zyjik8sP3yZiOfdgpYNwlc&_nc_ht=scontent.fmnl3-2.fna&oh=d80c256a60fe0eddf72311ada8336790&oe=5D87E5B0" alt="" class="circle" id="circle">
+                                    <h6>Eric Lacsamana <br>(Erickk Yu)</h6>
+                                     <!-- FOR RATING BARS -->
+                                     <p>Skill: 99%</p>
+                                     <div class="progress" class="size">  
+                                        <div class="determinate" style="width: 99%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+                                    <p>Web Developer & Web Designer <br>
+                                      Age: 28 
+                                    </p>
+                                      </div><!-- closing of content -->
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                      <!-- for Nestor -->
+                    <section class="section section-recent">
+                        <div class="row">
+                            <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                            <div class="card">
+                              <div class="card-content" >
+                                <!-- Junjun -->
+                                <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.0-9/53402697_10158228596852519_2789646864377446400_n.jpg?_nc_cat=102&_nc_eui2=AeGdR7CdlEEMBq7y1gU7GYPHg9kloQGVaK2r9IT9GldZQt50e3nSZ7cHeOR1XofkYfY-4R1_UDGwKbw0tHT6za7-uSLfUxgsdaxwW_BJ8vbETcuksgVJdtsBQN_9d6R-ytk&_nc_oc=AQnbNpTJ-co-930jVUFfpTrNJCQCaujqI4zrhlyN_JxypjWiIbDf9gSjAuHCLyRZU50&_nc_ht=scontent.fmnl3-2.fna&oh=6d92adea74540e1c59f7c799139a81af&oe=5D52F534" alt="" class="circle" id="circle">
+                                    <h6>Nestor Torres Macalinao Jr <br>( Torres)</h6>
+                                    <!-- FOR RATING BARS -->
+                                    <p>Skill: 99%</p>
+                                    <div class="progress" class="size">  
+                                        <div class="determinate" style="width: 99%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+                                    <p>Web Developer & Web Designer <br>
+                                      Age: 24 
+                                    </p>
+                                      </div><!-- closing of content -->
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+                      <!-- for Keven -->
+                    <section class="section section-recent">
+                        <div class="row">
+                            <div class="col s12 m12 l12"><!-- for control the col respansive yan par  -->
+                            <div class="card">
+                              <div class="card-content" >
+                                <!-- Junjun -->
+                                <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/62140566_862966210749062_8004162045656170496_n.jpg?_nc_cat=104&_nc_eui2=AeFdzBhkwoKQqEAyOt1TH2t3FeaTyiVBu62Ko9hCDDKUAswu68tw_jN2gj3szhX0UtnRfZbYm65CzrHTn40xqdX49h_kYkPanAYq8B5fQLCoR2DvD-2dAcU2rUdAemb67yU&_nc_oc=AQmZ5G0OXDMpZm_A1WNX2qn4DBmKJLL9zkQeMO7VyfIo1_ACNjFK4DxQTIKGo6n-ppw&_nc_ht=scontent.fmnl3-1.fna&oh=f1554d4ff482c6629204ff0bd0f7b480&oe=5D8F8FBB" alt="" class="circle" id="circle">
+                                    <h6>Keven Frias <br>( Keven)</h6>
+                                    <!-- FOR RATING BARS -->
+                                    <p>Skill: 99%</p>
+                                    <div class="progress" class="size">  
+                                        <div class="determinate" style="width: 99%"></div>
+                                      </div>
+                                      <!-- CLOSING OF RATING BAR -->
+                                    <p>Web Developer & Web Designer <br>
+                                      Age: 27 
+                                    </p>
+                                          
+
+                                      </div><!-- closing of content -->
+                                  </div>
+                              </div>
+                          </div>
+                      </section>
+
+            </dv>
+          </li><!-- closing <li> from top yan pre -->
+        </ul>
+    </div> <!-- div from top col s12 m6 l8 -->
+    
+<!-- FOR COMMENT FUNCTION TO BY:0d6rb3 -->
+      <div class="col s12 m6 l4">
+          <ul class="collapsible">
+              <li>
+                <div class="collapsible-header red darken-4 white-text">
+                  <i class="material-icons">comment</i>
+                  <center>COMMENTS</center>
+                  </div>
+                <div class="collapsible-body"><ul class="collection">
+                    <li class="collection-item avatar">
+                      <img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmTGhVmkZgdEiRNz1CfL2y7ZS26ZTzN111y75XCwacg5dw/nancy.jpg" alt="" class="circle">
+                        <p><span class="new badge">41 comments</span>
+                          <h5>Alie Baho</h5> 
+                          The food was amazing, and we enjoyed perfect wait service from Junjun.
+                        </p><br>
+                      
+                        <img src="https://philnews.ph/wp-content/uploads/2018/08/Nancy-Jewel-McDonie6.jpg" alt="" class="circle">
+                          <p><span class="new badge">91 comments</span>
+                            <h5>Casa Moto</h5> 
+                      Wait staff were extremely friendly and helpful. Delicious Wanton Noodles! 
+                    </p><br>
+    
+                    <img src="https://philnews.ph/wp-content/uploads/2018/08/Nancy-Jewel-McDonie5.jpg" alt="" class="circle">
+                    <p><span class="new badge">44 comments</span>
+                      <h5>Karen Lo</h5> 
+                        Service was very good and servers were kind, friendly and even offered to-go coffees in the morning for us to take back to our room.
+                   </p><br>
+    
+                   <img src="https://i.pinimg.com/originals/1f/b6/f4/1fb6f4ad69c45d9062d700f5a83ee497.jpg" alt="" class="circle">
+                    <p><span class="new badge">54 comments</span>
+                      <h5>Lele Aya</h5> 
+                        We were celebrating a birthday, and several unique requests that were all satisfied perfectly.
+                   </p>
+
+                   
+    
+                        
+                  </li> <!-- CLOSING  -->
+                  </li> <!-- CLOSING  -->
+              </ul><!-- CLOSING --></div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  <i class="material-icons">person</i>
+                  INFORMATION ABOUT RED PANDA
+                  <span class="new badge">4</span></div>
+                <div class="collapsible-body">
+                  <p>The red panda is slightly larger than a domestic cat with a bear-like body and thick russet fur.  </p>
+                  <p>The belly and limbs are black, and there are white markings on the side of the head and above its small eyes.</p>
+                  <p>Red pandas are very skillful and acrobatic animals that predominantly stay in trees.</p>
+                </div>
+              </li>
+            </ul> 
+    </div> <!-- closing of col s12 m6 yan pre -->
+</section>
+
+<!-- FOOTER -->
+<footer class="page-footer grey darken-4">
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6">
+      <h5 class="red-text text-lighten-1"><b>Branches</b></h5>
+      <p>Address: 30 Visayas Avenue, Bahay Toro, Quezon City<br>
+      Phone: (02) 376 6491<br><br>
+      Address: 48 East Capitol Drive, Kapitolyo, Pasig City<br>
+      Phone: (02) 475 0877</p>
+    </div>
+    <div class="col s12 m4 offset-m2">
+      <h5 class="red-text text-lighten-1"><b>Links</b></h5>
+      <ul>
+        <li>
+          <a class="white-text" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="white-text" href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a class="white-text" href="delivery.html">Delivery</a>
+        </li>
+        <li>
+          <a class="white-text" href="reservation.html">Reservation</a>
+        </li>
+        <li>
+          <a class="white-text" href="dashboard.html">Dashboard</a>
+        </li>
+        <li>
+          <a class="white-text" href="careers.html">Careers</a>
+        </li>
+        <li>
+          <a class="white-text" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright grey darken-2">
+  <div class="container">
+    🔴🐼 © 2019
+      <a class="grey-text text-lighten-2 right" href="#redpanda">
+        <i class="material-icons left">keyboard_arrow_up</i>Back To Top
+      </a>
+  </div>
+</div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/jun.css" />
+ 
+  <script>
+    $(document).ready(function () {
+      // jQuery for SWIPABLE TABS
+      $('#tabs-swipe-demo').tabs({
+        swipeable: true
+      });
+      // jQuery for MULTIPLE SELECT
+      $('select').material_select();
+      // jQuery for SLIDER
+      $('.slider').slider({
+        indicators: true,
+        height: 105, //for image
+        transition: 1000, //of texts
+        interval: 5000 //between images
+      });
+      // jQuery for SCROLLSPY
+      $('.scrollspy').scrollSpy();
+      // jQuery for SIDE NAV
+      $('.button-collapse').sideNav();
+    });
+  </script>
+  <script src="js/chart.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  
+</body>
+
+</html>
